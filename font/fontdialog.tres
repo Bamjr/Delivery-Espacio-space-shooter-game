@@ -1,0 +1,9 @@
+[gd_resource type="DynamicFont" load_steps=2 format=2]
+
+[sub_resource type="DynamicFontData" id=1]
+font_path = "res://font/thongkorn_demo_v1-0/TTF/thongkorn-Regular.ttf"
+
+[resource]
+size = 40
+use_filter = true
+font_data = SubResource( 1 )

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/TypeWriter_Mutiple_v2_wav.wav-0ecf85b03ae326bc2bf7f166eb962179.sample"
+
+[deps]
+
+source_file="res://sound/TypeWriter_Multiple_01/TypeWriter_Mutiple_v2_wav.wav"
+dest_files=[ "res://.import/TypeWriter_Mutiple_v2_wav.wav-0ecf85b03ae326bc2bf7f166eb962179.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

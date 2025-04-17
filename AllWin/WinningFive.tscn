@@ -1,0 +1,36 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://AllWin/WinningOne.tscn" type="PackedScene" id=1]
+[ext_resource path="res://AllWin/WinningFive.gd" type="Script" id=2]
+
+[node name="WinningFive" instance=ExtResource( 1 )]
+script = ExtResource( 2 )
+
+[node name="Label2" parent="CanvasLayer/PanelContainer/MarginContainer/VBoxContainer" index="1"]
+text = "Saturn: เทพเจ้าแห่งการเกษตร"
+
+[node name="Label" parent="CanvasLayer/PanelContainer2/MarginContainer/VBoxContainer" index="0"]
+text = "เรื่องน่ารู้เกี่ยวกับอวกาศ บทที่ 5"
+
+[node name="Label2" parent="CanvasLayer/PanelContainer2/MarginContainer/VBoxContainer" index="1"]
+text = "  เรื่องน่ารู้เกี่ยวกับดาวเสาร์ หรือเจ้าของฉายาเทพเจ้าแห่งการเกษตร"
+
+[node name="Label3" parent="CanvasLayer/PanelContainer2/MarginContainer/VBoxContainer" index="2"]
+margin_bottom = 211.0
+text = "  เป็นดาวเคราะห์ที่มีวงแหวนล้อมรอบ
+  เป็นดาวเคราะหืที่มีความหนาแน่นน้อยกว่าน้ำ
+  มีขนาดเส้นผ่าศูนกลางประมาณ 8 เท่า ของโลก
+  หมุนรอบตัวเอง: 10 ชั่วโมง 40 นาที
+  หมุนรอบดวงอาทิตย์: ราว 30 ปี
+  ดวงจันทร์บริวาร: ไม่น้อยกว่า 30 ดวง"
+
+[node name="Label4" parent="CanvasLayer/PanelContainer2/MarginContainer/VBoxContainer" index="3"]
+margin_top = 215.0
+margin_bottom = 237.0
+text = "  เรื่องน่ารู้เพิ่มเติม"
+
+[node name="Label5" parent="CanvasLayer/PanelContainer2/MarginContainer/VBoxContainer" index="4"]
+margin_top = 241.0
+margin_bottom = 288.0
+text = "  ดวงอาทิตย์:
+  เป็นดาวฤกษ์ดวงเดียวและเป็นศูนย์กลางของระบบสุริยะ"

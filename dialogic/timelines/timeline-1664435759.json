@@ -1,0 +1,76 @@
+{
+	"events": [
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1665912032.cfg"
+		},
+		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": true,
+			"wait_seconds": 0.8
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "เสียงวิทยุดับลง "
+		},
+		{
+			"character": "character-1667221475.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "ดำเนินการปรับจูนคลื่นสัณญาณ เสียงชัดเจนขึ้นแล้วใช่ไหมคะ?"
+		},
+		{
+			"character": "character-1665911980.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "ใช่- "
+		},
+		{
+			"character": "character-1667221475.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "จูเนียร์ คุณสามารถดูภารกิจ \nหรือสิ่งที่คุณต้องทำและเรียนรู้ได้ที่ปุ่ม 'สิ่งที่ต้องทำ'"
+		},
+		{
+			"character": "character-1667221475.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "จูเนียร์ คุณต้องหมั่นตรวจสอบพัสดุทุกครั้งที่ปุ่ม \"ตรวจสอบพัสดุ\""
+		},
+		{
+			"character": "character-1667221475.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "ถ้าหากสำรวจครบทุกปุ่มแล้ว จึงเริ่มปฏิบัติการได้ค่ะ "
+		},
+		{
+			"character": "character-1667221475.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "ขอให้โชคดีกับการส่งของและกลับมาครั้งนี้นะคะ หากคุณผ่านไปได้ฉันจะพิจารณาการเลื่อนให้คุณเป็นตัวจริง"
+		},
+		{
+			"character": "character-1665911980.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "คุณจะไปแล้วเหรอ!?"
+		},
+		{
+			"character": "character-1667221475.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "ฉันไกด์คุณได้ดีที่สุดเท่านี้ และต่อไปคุณต้องทำมันด้วยตัวเองแล้วค่ะ\n ขอให้โชคดี"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.2 - Dev",
+		"file": "timeline-1664435759.json",
+		"name": "test"
+	}
+}

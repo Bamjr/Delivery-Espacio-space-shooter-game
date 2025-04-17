@@ -1,0 +1,92 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://sound/cilck.wav" type="AudioStream" id=1]
+
+[sub_resource type="DynamicFontData" id=1]
+font_path = "res://font/KAMINN-DEMO_[PERSONAL-USE-ONLY]/KAMINN-DEMO_[PERSONAL-USE-ONLY]/OTF/KAMINN_DEMO.otf"
+
+[sub_resource type="DynamicFont" id=2]
+size = 70
+font_data = SubResource( 1 )
+
+[sub_resource type="DynamicFontData" id=3]
+font_path = "res://font/Superspace Bold ver 1.00.otf"
+
+[sub_resource type="DynamicFont" id=4]
+size = 40
+font_data = SubResource( 3 )
+
+[sub_resource type="DynamicFontData" id=5]
+font_path = "res://font/Superspace Light ver 1.00.otf"
+
+[sub_resource type="DynamicFont" id=6]
+size = 30
+font_data = SubResource( 5 )
+
+[node name="boxtodo" type="PopupDialog"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -392.5
+margin_top = -256.5
+margin_right = 392.5
+margin_bottom = 256.5
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+margin_right = 785.0
+margin_bottom = 513.0
+custom_constants/separation = 16
+
+[node name="lesson" type="Label" parent="MarginContainer/VBoxContainer"]
+margin_right = 785.0
+margin_bottom = 71.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "บทเรียน"
+align = 1
+valign = 1
+
+[node name="sublesson" type="Label" parent="MarginContainer/VBoxContainer"]
+margin_top = 87.0
+margin_right = 785.0
+margin_bottom = 132.0
+custom_fonts/font = SubResource( 4 )
+text = "  เกร็ดความรู้ที่จะได้รับจากภารกิจนีิ้"
+
+[node name="des" type="Label" parent="MarginContainer/VBoxContainer"]
+margin_top = 148.0
+margin_right = 785.0
+margin_bottom = 256.0
+custom_fonts/font = SubResource( 6 )
+text = " - ความรู้เกี่ยวกับระบบสุริยะที่สรุปมาจากหนังสือสสวท. ป.4
+ - ความรู้เกี่ยวกับระบบสุริยะเพิ่มเติม
+ - ทฤษฎีสมคบคิดในอวกาศ"
+
+[node name="to_do" type="Label" parent="MarginContainer/VBoxContainer"]
+margin_top = 272.0
+margin_right = 785.0
+margin_bottom = 343.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "สิ่งที่ต้องทำ"
+align = 1
+valign = 1
+
+[node name="des2" type="Label" parent="MarginContainer/VBoxContainer"]
+margin_top = 359.0
+margin_right = 785.0
+margin_bottom = 430.0
+custom_fonts/font = SubResource( 6 )
+text = " - กำจัดศัตรูขวางทาง หลบหลีกอุปสรรค
+ - เรียนรู้เกี่ยวกับความรู้ที่จะได้รับเมื่อทำภารกิจสำเร็จ"
+
+[node name="click_sound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 1 )

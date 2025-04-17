@@ -1,0 +1,1229 @@
+[gd_scene load_steps=28 format=2]
+
+[ext_resource path="res://Bgart/gagg.png" type="Texture" id=1]
+[ext_resource path="res://Bgart/1268205.jpg" type="Texture" id=2]
+[ext_resource path="res://CanvasLayer.gd" type="Script" id=3]
+[ext_resource path="res://TextureRect2.gd" type="Script" id=4]
+[ext_resource path="res://CanvasLayer2.gd" type="Script" id=5]
+[ext_resource path="res://font/Superspace Light Italic ver 1.00.otf" type="DynamicFontData" id=6]
+[ext_resource path="res://radio.tscn" type="PackedScene" id=7]
+[ext_resource path="res://lighting.gd" type="Script" id=8]
+[ext_resource path="res://Bgart/light.png" type="Texture" id=9]
+[ext_resource path="res://radioevent.gd" type="Script" id=10]
+[ext_resource path="res://intro.gd" type="Script" id=11]
+[ext_resource path="res://sound/mixkit-fast-laptop-keyboard-typing-1392.wav" type="AudioStream" id=12]
+[ext_resource path="res://sound/radioclick.wav" type="AudioStream" id=13]
+
+[sub_resource type="Animation" id=1]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -390, -294 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:rect_size")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 4276, 2865 ) ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "pop"
+length = 10.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rect_size")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 4276, 2865 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:rect_position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 5.1, 10 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -1182, -782 ), Vector2( -1417, -970 ), Vector2( -1182, -782 ) ]
+}
+
+[sub_resource type="Animation" id=6]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 0.54902, 0.945098, 0.972549, 0.486275 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("../../bgg:self_modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 0.273438, 0.273438, 0.273438, 1 ) ]
+}
+
+[sub_resource type="Animation" id=7]
+resource_name = "light"
+length = 2.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.001, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.54902, 0.945098, 0.972549, 0.486275 ), Color( 0.54902, 0.945098, 0.972549, 0.486275 ), Color( 0.54902, 0.945098, 0.972549, 0.364706 ), Color( 0.54902, 0.945098, 0.972549, 0.486275 ) ]
+}
+
+[sub_resource type="Animation" id=8]
+resource_name = "tec"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("../../bgg:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0.273438, 0.273438, 0.273438, 1 ), Color( 0.721569, 0.901961, 0.980392, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.1, 3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0.54902, 0.945098, 0.972549, 0.449804 ), Color( 0.54902, 0.945098, 0.972549, 0 ) ]
+}
+
+[sub_resource type="DynamicFont" id=3]
+size = 40
+font_data = ExtResource( 6 )
+
+[sub_resource type="DynamicFontData" id=9]
+font_path = "res://font/Superspace Bold ver 1.00.otf"
+
+[sub_resource type="DynamicFont" id=10]
+size = 35
+font_data = SubResource( 9 )
+
+[sub_resource type="DynamicFontData" id=11]
+font_path = "res://font/Superspace Light ver 1.00.otf"
+
+[sub_resource type="DynamicFont" id=12]
+size = 30
+font_data = SubResource( 11 )
+
+[sub_resource type="DynamicFontData" id=13]
+font_path = "res://font/Superspace Regular Italic ver 1.00.otf"
+
+[sub_resource type="DynamicFont" id=14]
+size = 50
+font_data = SubResource( 13 )
+
+[sub_resource type="Animation" id=4]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("ColorRect/Label:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("ColorRect:mouse_filter")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0 ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("ColorRect/MarginContainer/VBoxContainer/day:text")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ "วันไม่ระบุ เดือนไม่ระบุ ปีไม่ระบุ เวลา 4:00 AM ณ เวลาดาวโลก ไม่ระบุตำแหน่ง" ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("ColorRect/MarginContainer/VBoxContainer/p1:text")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ "คุณลืมตาตื่นขึ้นมาบนยานอวกาศที่คุ้นตา บรรยากาศรอบด้านปกคลุมไปด้วยความมืด มีแต่วิทยุ
+เก่า ๆ ที่เหมือนจะเป็นตัวกำเนิดแสงเพียงอย่างเดียว คุณปรับวิสัยทัศน์และมองไปรอบ ๆ " ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("ColorRect/MarginContainer/VBoxContainer/p2:text")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ " ใช่... นี่คือยานอวกาศส่งของ x-2 เป็นยานพาหนะที่คุณอาจจะได้ประจำการอย่างจริง ๆ จัง ๆ
+ในอนาคต ถ้าการฝึกงานเป็นไปด้วยดีล่ะนะ" ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("ColorRect/MarginContainer/VBoxContainer/p3:text")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ "บางทีคุณอาจจะเผลอหลับไปตอนที่ยานอวกาศกำลังเคลื่อนที่ออกจากโลก 
+แต่น่าแปลกที่เอเจนท์ขับยานเมื่อตอนแรกที่มาด้วยกันกลับหายไปจากเบาะซะงั้น" ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("ColorRect/MarginContainer/VBoxContainer/p4:text")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ "ด้วยความสงสัย คุณตะโกนเรียกเอเจนท์ เสียงน่ารำคาญของคุณกึกก้องไปทั่วยาน
+แต่สุดท้ายก็ไม่มีใครตอบกลับมา... ไฟฟ้าทั่วยานดับอย่างน่าประหลาด
+บวกกับเอเจนท์ที่หายตัวไปอย่างลึกลับ สถานการณ์นี้ชักเริ่มจะผิดปกติแล้ว" ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("ColorRect/MarginContainer/VBoxContainer/day:visible_characters")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ -1 ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("ColorRect/MarginContainer/VBoxContainer/day:percent_visible")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 1.0 ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("ColorRect/MarginContainer/VBoxContainer/p1:percent_visible")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 1.0 ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("ColorRect/MarginContainer/VBoxContainer/p2:percent_visible")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 1.0 ]
+}
+tracks/12/type = "value"
+tracks/12/path = NodePath("ColorRect/MarginContainer/VBoxContainer/p3:percent_visible")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 1.0 ]
+}
+tracks/13/type = "value"
+tracks/13/path = NodePath("ColorRect/MarginContainer/VBoxContainer/p4:percent_visible")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 1.0 ]
+}
+tracks/14/type = "value"
+tracks/14/path = NodePath("ColorRect/MarginContainer/VBoxContainer/p5:percent_visible")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 1.0 ]
+}
+tracks/15/type = "value"
+tracks/15/path = NodePath("ColorRect/MarginContainer/VBoxContainer/p6:percent_visible")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 1.0 ]
+}
+tracks/16/type = "value"
+tracks/16/path = NodePath("ColorRect/MarginContainer/VBoxContainer/day:visible")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
+}
+tracks/17/type = "value"
+tracks/17/path = NodePath("ColorRect/MarginContainer/VBoxContainer/p1:visible")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
+}
+tracks/18/type = "value"
+tracks/18/path = NodePath("ColorRect/MarginContainer/VBoxContainer/p2:visible")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
+}
+tracks/19/type = "value"
+tracks/19/path = NodePath("ColorRect/MarginContainer/VBoxContainer/p3:visible")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
+}
+tracks/20/type = "value"
+tracks/20/path = NodePath("ColorRect/MarginContainer/VBoxContainer/p4:visible")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
+}
+tracks/21/type = "value"
+tracks/21/path = NodePath("ColorRect/MarginContainer/VBoxContainer/p5:visible")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
+}
+tracks/22/type = "value"
+tracks/22/path = NodePath("ColorRect/MarginContainer/VBoxContainer/p6:visible")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
+}
+tracks/23/type = "value"
+tracks/23/path = NodePath("ColorRect/MarginContainer/VBoxContainer/day:mouse_filter")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 2 ]
+}
+tracks/24/type = "value"
+tracks/24/path = NodePath("ColorRect/MarginContainer/VBoxContainer/p1:mouse_filter")
+tracks/24/interp = 1
+tracks/24/loop_wrap = true
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 2 ]
+}
+tracks/25/type = "value"
+tracks/25/path = NodePath("ColorRect/MarginContainer/VBoxContainer/p2:mouse_filter")
+tracks/25/interp = 1
+tracks/25/loop_wrap = true
+tracks/25/imported = false
+tracks/25/enabled = true
+tracks/25/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 2 ]
+}
+tracks/26/type = "value"
+tracks/26/path = NodePath("ColorRect/MarginContainer/VBoxContainer/p3:mouse_filter")
+tracks/26/interp = 1
+tracks/26/loop_wrap = true
+tracks/26/imported = false
+tracks/26/enabled = true
+tracks/26/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 2 ]
+}
+tracks/27/type = "value"
+tracks/27/path = NodePath("ColorRect/MarginContainer/VBoxContainer/p4:mouse_filter")
+tracks/27/interp = 1
+tracks/27/loop_wrap = true
+tracks/27/imported = false
+tracks/27/enabled = true
+tracks/27/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 2 ]
+}
+tracks/28/type = "value"
+tracks/28/path = NodePath("ColorRect/MarginContainer/VBoxContainer/p5:mouse_filter")
+tracks/28/interp = 1
+tracks/28/loop_wrap = true
+tracks/28/imported = false
+tracks/28/enabled = true
+tracks/28/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 2 ]
+}
+tracks/29/type = "value"
+tracks/29/path = NodePath("ColorRect/MarginContainer/VBoxContainer/p6:mouse_filter")
+tracks/29/interp = 1
+tracks/29/loop_wrap = true
+tracks/29/imported = false
+tracks/29/enabled = true
+tracks/29/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 2 ]
+}
+tracks/30/type = "value"
+tracks/30/path = NodePath("ColorRect/MarginContainer/VBoxContainer/day:modulate")
+tracks/30/interp = 1
+tracks/30/loop_wrap = true
+tracks/30/imported = false
+tracks/30/enabled = true
+tracks/30/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/31/type = "value"
+tracks/31/path = NodePath("ColorRect/MarginContainer/VBoxContainer/p1:modulate")
+tracks/31/interp = 1
+tracks/31/loop_wrap = true
+tracks/31/imported = false
+tracks/31/enabled = true
+tracks/31/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/32/type = "value"
+tracks/32/path = NodePath("ColorRect/MarginContainer/VBoxContainer/p2:modulate")
+tracks/32/interp = 1
+tracks/32/loop_wrap = true
+tracks/32/imported = false
+tracks/32/enabled = true
+tracks/32/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/33/type = "value"
+tracks/33/path = NodePath("ColorRect/MarginContainer/VBoxContainer/p3:modulate")
+tracks/33/interp = 1
+tracks/33/loop_wrap = true
+tracks/33/imported = false
+tracks/33/enabled = true
+tracks/33/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/34/type = "value"
+tracks/34/path = NodePath("ColorRect/MarginContainer/VBoxContainer/p4:modulate")
+tracks/34/interp = 1
+tracks/34/loop_wrap = true
+tracks/34/imported = false
+tracks/34/enabled = true
+tracks/34/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/35/type = "value"
+tracks/35/path = NodePath("ColorRect/MarginContainer/VBoxContainer/p5:modulate")
+tracks/35/interp = 1
+tracks/35/loop_wrap = true
+tracks/35/imported = false
+tracks/35/enabled = true
+tracks/35/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/36/type = "value"
+tracks/36/path = NodePath("ColorRect/MarginContainer/VBoxContainer/p6:modulate")
+tracks/36/interp = 1
+tracks/36/loop_wrap = true
+tracks/36/imported = false
+tracks/36/enabled = true
+tracks/36/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/37/type = "value"
+tracks/37/path = NodePath("../typing:playing")
+tracks/37/interp = 1
+tracks/37/loop_wrap = true
+tracks/37/imported = false
+tracks/37/enabled = true
+tracks/37/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ false ]
+}
+tracks/38/type = "value"
+tracks/38/path = NodePath("../typing:volume_db")
+tracks/38/interp = 1
+tracks/38/loop_wrap = true
+tracks/38/imported = false
+tracks/38/enabled = true
+tracks/38/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ -6.016 ]
+}
+tracks/39/type = "value"
+tracks/39/path = NodePath("../typing:pitch_scale")
+tracks/39/interp = 1
+tracks/39/loop_wrap = true
+tracks/39/imported = false
+tracks/39/enabled = true
+tracks/39/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 1.0 ]
+}
+
+[sub_resource type="Animation" id=5]
+resource_name = "fadeja"
+length = 42.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 8.3, 9.8, 40, 41.9 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 1 ), Color( 0, 0, 0, 1 ), Color( 0, 0, 0, 0.47451 ), Color( 0, 0, 0, 0.47451 ), Color( 0, 0, 0, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("ColorRect/Label:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 1.5, 4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("ColorRect:mouse_filter")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 42 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 0, 2 ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("ColorRect/MarginContainer/VBoxContainer/day:percent_visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 4.4, 4.7, 8 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0, 0.0, 1.0 ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("ColorRect/MarginContainer/VBoxContainer/p1:percent_visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0.001, 8, 8.2, 13 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0, 0.0, 1.0 ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("ColorRect/MarginContainer/VBoxContainer/p2:percent_visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 13, 13.3, 17.1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0, 0.0, 1.0 ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("ColorRect/MarginContainer/VBoxContainer/p3:percent_visible")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 17.2, 17.5, 21.9 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0, 0.0, 1.0 ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("ColorRect/MarginContainer/VBoxContainer/p4:percent_visible")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0, 21.8, 21.9, 28.1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0, 0.0, 1.0 ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("ColorRect/MarginContainer/VBoxContainer/p5:percent_visible")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0, 28.1, 28.3, 31.1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0, 0.0, 1.0 ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("ColorRect/MarginContainer/VBoxContainer/p6:percent_visible")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0, 31.1, 31.3, 34.9 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0, 0.0, 1.0 ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("ColorRect/MarginContainer/VBoxContainer/day:visible")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0.1, 40 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("ColorRect/MarginContainer/VBoxContainer/p1:visible")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 4.5, 40 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+tracks/12/type = "value"
+tracks/12/path = NodePath("ColorRect/MarginContainer/VBoxContainer/p2:visible")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"times": PoolRealArray( 4.5, 40 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+tracks/13/type = "value"
+tracks/13/path = NodePath("ColorRect/MarginContainer/VBoxContainer/p3:visible")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/keys = {
+"times": PoolRealArray( 4.4, 40 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+tracks/14/type = "value"
+tracks/14/path = NodePath("ColorRect/MarginContainer/VBoxContainer/p4:visible")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/keys = {
+"times": PoolRealArray( 4.3, 40 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+tracks/15/type = "value"
+tracks/15/path = NodePath("ColorRect/MarginContainer/VBoxContainer/p5:visible")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/keys = {
+"times": PoolRealArray( 4.2, 40 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+tracks/16/type = "value"
+tracks/16/path = NodePath("ColorRect/MarginContainer/VBoxContainer/p6:visible")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/keys = {
+"times": PoolRealArray( 4.1, 40 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+tracks/17/type = "value"
+tracks/17/path = NodePath("ColorRect/MarginContainer/VBoxContainer/day:mouse_filter")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 2 ]
+}
+tracks/18/type = "value"
+tracks/18/path = NodePath("ColorRect/MarginContainer/VBoxContainer/p1:mouse_filter")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 2 ]
+}
+tracks/19/type = "value"
+tracks/19/path = NodePath("ColorRect/MarginContainer/VBoxContainer/p2:mouse_filter")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 2 ]
+}
+tracks/20/type = "value"
+tracks/20/path = NodePath("ColorRect/MarginContainer/VBoxContainer/p3:mouse_filter")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 2 ]
+}
+tracks/21/type = "value"
+tracks/21/path = NodePath("ColorRect/MarginContainer/VBoxContainer/p4:mouse_filter")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 2 ]
+}
+tracks/22/type = "value"
+tracks/22/path = NodePath("ColorRect/MarginContainer/VBoxContainer/p5:mouse_filter")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 2 ]
+}
+tracks/23/type = "value"
+tracks/23/path = NodePath("ColorRect/MarginContainer/VBoxContainer/p6:mouse_filter")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 2 ]
+}
+tracks/24/type = "value"
+tracks/24/path = NodePath("ColorRect/MarginContainer/VBoxContainer/day:modulate")
+tracks/24/interp = 1
+tracks/24/loop_wrap = true
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/keys = {
+"times": PoolRealArray( 0.1, 37, 39.8 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/25/type = "value"
+tracks/25/path = NodePath("ColorRect/MarginContainer/VBoxContainer/p1:modulate")
+tracks/25/interp = 1
+tracks/25/loop_wrap = true
+tracks/25/imported = false
+tracks/25/enabled = true
+tracks/25/keys = {
+"times": PoolRealArray( 0, 37, 39.8 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/26/type = "value"
+tracks/26/path = NodePath("ColorRect/MarginContainer/VBoxContainer/p2:modulate")
+tracks/26/interp = 1
+tracks/26/loop_wrap = true
+tracks/26/imported = false
+tracks/26/enabled = true
+tracks/26/keys = {
+"times": PoolRealArray( 0, 37, 39.8 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/27/type = "value"
+tracks/27/path = NodePath("ColorRect/MarginContainer/VBoxContainer/p3:modulate")
+tracks/27/interp = 1
+tracks/27/loop_wrap = true
+tracks/27/imported = false
+tracks/27/enabled = true
+tracks/27/keys = {
+"times": PoolRealArray( 0, 37, 39.8 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/28/type = "value"
+tracks/28/path = NodePath("ColorRect/MarginContainer/VBoxContainer/p4:modulate")
+tracks/28/interp = 1
+tracks/28/loop_wrap = true
+tracks/28/imported = false
+tracks/28/enabled = true
+tracks/28/keys = {
+"times": PoolRealArray( 0, 37, 39.8 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/29/type = "value"
+tracks/29/path = NodePath("ColorRect/MarginContainer/VBoxContainer/p5:modulate")
+tracks/29/interp = 1
+tracks/29/loop_wrap = true
+tracks/29/imported = false
+tracks/29/enabled = true
+tracks/29/keys = {
+"times": PoolRealArray( 0, 37, 39.8 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/30/type = "value"
+tracks/30/path = NodePath("ColorRect/MarginContainer/VBoxContainer/p6:modulate")
+tracks/30/interp = 1
+tracks/30/loop_wrap = true
+tracks/30/imported = false
+tracks/30/enabled = true
+tracks/30/keys = {
+"times": PoolRealArray( 0, 38.6, 39.8 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/31/type = "value"
+tracks/31/path = NodePath("../typing:playing")
+tracks/31/interp = 1
+tracks/31/loop_wrap = true
+tracks/31/imported = false
+tracks/31/enabled = true
+tracks/31/keys = {
+"times": PoolRealArray( 0, 4.7, 8.1, 8.3, 13, 13.4, 17.1, 17.2, 30.8, 31.5, 35 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false, true, false, true, false, true, false, true, false ]
+}
+tracks/32/type = "value"
+tracks/32/path = NodePath("../typing:volume_db")
+tracks/32/interp = 1
+tracks/32/loop_wrap = true
+tracks/32/imported = false
+tracks/32/enabled = true
+tracks/32/keys = {
+"times": PoolRealArray( 0, 8.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ -6.016, -10.0 ]
+}
+tracks/33/type = "value"
+tracks/33/path = NodePath("../typing:pitch_scale")
+tracks/33/interp = 1
+tracks/33/loop_wrap = true
+tracks/33/imported = false
+tracks/33/enabled = true
+tracks/33/keys = {
+"times": PoolRealArray( 0, 30.7, 31 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 1.0, 1.0, 0.42 ]
+}
+
+[node name="intro" type="Node2D"]
+script = ExtResource( 11 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+script = ExtResource( 3 )
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer"]
+anchor_left = -1.154
+anchor_top = -1.303
+anchor_right = 3.041
+anchor_bottom = 3.505
+margin_left = -390.0
+margin_top = -294.0
+margin_right = 3886.0
+margin_bottom = 2571.0
+mouse_filter = 2
+texture = ExtResource( 2 )
+expand = true
+script = ExtResource( 4 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/TextureRect2"]
+anims/RESET = SubResource( 1 )
+anims/pop = SubResource( 2 )
+
+[node name="bgg" type="Sprite" parent="CanvasLayer"]
+self_modulate = Color( 0.273438, 0.273438, 0.273438, 1 )
+position = Vector2( 521.5, 294 )
+scale = Vector2( 0.267334, 0.276667 )
+texture = ExtResource( 1 )
+
+[node name="Area2D" parent="CanvasLayer" instance=ExtResource( 7 )]
+position = Vector2( -41, 0 )
+script = ExtResource( 10 )
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Area2D"]
+modulate = Color( 0.54902, 0.945098, 0.972549, 0.486275 )
+margin_left = 161.0
+margin_top = 256.0
+margin_right = 490.0
+margin_bottom = 540.0
+mouse_filter = 2
+texture = ExtResource( 9 )
+expand = true
+script = ExtResource( 8 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/Area2D/TextureRect"]
+anims/RESET = SubResource( 6 )
+anims/light = SubResource( 7 )
+anims/tec = SubResource( 8 )
+
+[node name="radioclick" type="AudioStreamPlayer2D" parent="CanvasLayer/Area2D"]
+position = Vector2( 41, 0 )
+stream = ExtResource( 13 )
+volume_db = -3.029
+
+[node name="CanvasLayer2" type="CanvasLayer" parent="."]
+script = ExtResource( 5 )
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer2"]
+anchor_left = -0.042
+anchor_top = -0.048
+anchor_right = 1.062
+anchor_bottom = 1.063
+margin_left = 0.00800323
+margin_top = -0.199999
+margin_right = -0.488037
+margin_bottom = 0.199951
+color = Color( 0, 0, 0, 1 )
+
+[node name="Label" type="Label" parent="CanvasLayer2/ColorRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = SubResource( 3 )
+text = "Prologue : trainee's operations"
+align = 1
+valign = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer2/ColorRect"]
+anchor_left = 0.081
+anchor_top = 0.093
+anchor_right = 0.905
+anchor_bottom = 0.885
+margin_left = -0.529999
+margin_top = -0.0309944
+margin_right = 0.349976
+margin_bottom = -0.294983
+mouse_filter = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer2/ColorRect/MarginContainer"]
+margin_right = 954.0
+margin_bottom = 527.0
+mouse_filter = 2
+
+[node name="day" type="Label" parent="CanvasLayer2/ColorRect/MarginContainer/VBoxContainer"]
+margin_right = 954.0
+margin_bottom = 40.0
+custom_colors/font_color = Color( 0.0196078, 1, 0.0941176, 1 )
+custom_fonts/font = SubResource( 10 )
+text = "วันไม่ระบุ เดือนไม่ระบุ ปีไม่ระบุ เวลา 4:00 AM ณ เวลาดาวโลก ไม่ระบุตำแหน่ง"
+
+[node name="p1" type="Label" parent="CanvasLayer2/ColorRect/MarginContainer/VBoxContainer"]
+margin_top = 44.0
+margin_right = 954.0
+margin_bottom = 115.0
+custom_fonts/font = SubResource( 12 )
+text = "คุณลืมตาตื่นขึ้นมาบนยานอวกาศที่คุ้นตา บรรยากาศรอบด้านปกคลุมไปด้วยความมืด มีแต่วิทยุ
+เก่า ๆ ที่เหมือนจะเป็นตัวกำเนิดแสงเพียงอย่างเดียว คุณปรับวิสัยทัศน์และมองไปรอบ ๆ "
+
+[node name="p2" type="Label" parent="CanvasLayer2/ColorRect/MarginContainer/VBoxContainer"]
+margin_top = 119.0
+margin_right = 954.0
+margin_bottom = 190.0
+custom_fonts/font = SubResource( 12 )
+text = " ใช่... นี่คือยานอวกาศส่งของ x-2 เป็นยานพาหนะที่คุณอาจจะได้ประจำการอย่างจริง ๆ จัง ๆ
+ในอนาคต ถ้าการฝึกงานเป็นไปด้วยดีล่ะนะ"
+
+[node name="p3" type="Label" parent="CanvasLayer2/ColorRect/MarginContainer/VBoxContainer"]
+margin_top = 194.0
+margin_right = 954.0
+margin_bottom = 265.0
+custom_fonts/font = SubResource( 12 )
+text = "บางทีคุณอาจจะเผลอหลับไปตอนที่ยานอวกาศกำลังเคลื่อนที่ออกจากโลก 
+แต่น่าแปลกที่เอเจนท์ขับยานเมื่อตอนแรกที่มาด้วยกันกลับหายไปจากเบาะซะงั้น"
+
+[node name="p4" type="Label" parent="CanvasLayer2/ColorRect/MarginContainer/VBoxContainer"]
+margin_top = 269.0
+margin_right = 954.0
+margin_bottom = 377.0
+custom_fonts/font = SubResource( 12 )
+text = "ด้วยความสงสัย คุณตะโกนเรียกเอเจนท์ เสียงน่ารำคาญของคุณกึกก้องไปทั่วยาน
+แต่สุดท้ายก็ไม่มีใครตอบกลับมา... ไฟฟ้าทั่วยานดับอย่างน่าประหลาด
+บวกกับเอเจนท์ที่หายตัวไปอย่างลึกลับ สถานการณ์นี้ชักเริ่มจะผิดปกติแล้ว"
+
+[node name="p5" type="Label" parent="CanvasLayer2/ColorRect/MarginContainer/VBoxContainer"]
+margin_top = 381.0
+margin_right = 954.0
+margin_bottom = 415.0
+custom_fonts/font = SubResource( 12 )
+text = "คุณตั้งสติตัวเองมั่น อย่างแรกต้องหาตัวสื่อสารติดต่อกับเอเจ้นท์ผู้ช่วยประจำองค์กรเสียก่อน"
+
+[node name="p6" type="Label" parent="CanvasLayer2/ColorRect/MarginContainer/VBoxContainer"]
+margin_top = 419.0
+margin_right = 954.0
+margin_bottom = 476.0
+custom_colors/font_color = Color( 0, 1, 0.929412, 1 )
+custom_fonts/font = SubResource( 14 )
+text = "แล้วมันคือตัวไหนกันล่ะเนี่ย...?"
+align = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer2"]
+anims/RESET = SubResource( 4 )
+anims/fadeja = SubResource( 5 )
+
+[node name="typing" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 12 )
+volume_db = -6.016
+
+[connection signal="input_event" from="CanvasLayer/Area2D" to="CanvasLayer/Area2D" method="_on_Area2D_input_event"]
+[connection signal="mouse_entered" from="CanvasLayer/Area2D" to="CanvasLayer/Area2D" method="_on_Area2D_mouse_entered"]
+[connection signal="mouse_exited" from="CanvasLayer/Area2D" to="CanvasLayer/Area2D" method="_on_Area2D_mouse_exited"]

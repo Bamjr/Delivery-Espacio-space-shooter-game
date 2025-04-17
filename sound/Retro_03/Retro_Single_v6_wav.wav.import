@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Retro_Single_v6_wav.wav-f11dbabb72944e446b72f84ae01658c9.sample"
+
+[deps]
+
+source_file="res://sound/Retro_03/Retro_Single_v6_wav.wav"
+dest_files=[ "res://.import/Retro_Single_v6_wav.wav-f11dbabb72944e446b72f84ae01658c9.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

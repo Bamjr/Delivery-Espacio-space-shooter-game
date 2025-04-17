@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://AllWin/WinningOne.tscn" type="PackedScene" id=1]
+[ext_resource path="res://AllWin/WinningThree.gd" type="Script" id=2]
+
+[node name="WinningThree" instance=ExtResource( 1 )]
+script = ExtResource( 2 )
+
+[node name="Label2" parent="CanvasLayer/PanelContainer/MarginContainer/VBoxContainer" index="1"]
+text = "Mars: ดาวเคราะห์แดง"
+
+[node name="Label" parent="CanvasLayer/PanelContainer2/MarginContainer/VBoxContainer" index="0"]
+text = "เรื่องน่ารู้เกี่ยวกับอวกาศ บทที่ 3"
+
+[node name="Label2" parent="CanvasLayer/PanelContainer2/MarginContainer/VBoxContainer" index="1"]
+text = "  เรื่องน่ารู้เกี่ยวกับดาวอังคาร หรือเจ้าของฉายาดาวเคราะห์แดง"
+
+[node name="Label3" parent="CanvasLayer/PanelContainer2/MarginContainer/VBoxContainer" index="2"]
+text = "  เชื่อว่าน่าจะมีสิ่งมีชีวิตอยู่ เพราะมีน้ำไหลในบางบริเวณ
+  หมุนรอบตัวเอง: 25 ชั่วโมง
+  โคจรดวงอาทิตย์: 243 วัน
+  มีดวงจันทร์เป็นบริวาร: 2 ดวง
+  ขนาดเส้นผ่าศูนย์กลางโดยประมาณครึ่งหนึ่งของโลก"
+
+[node name="Label5" parent="CanvasLayer/PanelContainer2/MarginContainer/VBoxContainer" index="4"]
+margin_bottom = 288.0
+text = "  ดาวเคราะห์น้อย:
+  ดาวเคราะห์น้อยเป็นก้อนหินขนาดต่างๆเส้นผ่าศูนย์กลาง 1-1000 กิโลเมตร 
+  ซึ่งมีจำนวนมากกว่า 20000 ดวงส่วนมากโคจรอยู่ระหว่างวงโคจรของดาวอังคารและดาวพฤหัสบดี"

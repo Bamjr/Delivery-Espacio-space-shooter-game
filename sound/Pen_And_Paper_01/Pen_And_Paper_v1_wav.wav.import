@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Pen_And_Paper_v1_wav.wav-6f81c6b7f6d60e106f4e9b147e019bc6.sample"
+
+[deps]
+
+source_file="res://sound/Pen_And_Paper_01/Pen_And_Paper_v1_wav.wav"
+dest_files=[ "res://.import/Pen_And_Paper_v1_wav.wav-6f81c6b7f6d60e106f4e9b147e019bc6.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

@@ -1,0 +1,21 @@
+{
+	"color": "#ff44ff00",
+	"description": "",
+	"display_name": "",
+	"display_name_bool": false,
+	"id": "character-1665910294.json",
+	"mirror_portraits": false,
+	"name": "Assistant",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": -100,
+	"offset_y": 100,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": ""
+		}
+	],
+	"scale": 35,
+	"theme": ""
+}

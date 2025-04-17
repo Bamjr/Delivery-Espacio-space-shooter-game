@@ -1,0 +1,55 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://AllWin/WinningOne.tscn" type="PackedScene" id=1]
+[ext_resource path="res://AllWin/WinningSeven.gd" type="Script" id=2]
+
+[node name="WinningSeven" instance=ExtResource( 1 )]
+script = ExtResource( 2 )
+
+[node name="Label" parent="CanvasLayer/PanelContainer/MarginContainer/VBoxContainer" index="0"]
+text = "Final Mission Complete!"
+
+[node name="Label2" parent="CanvasLayer/PanelContainer/MarginContainer/VBoxContainer" index="1"]
+text = "Neptune: เทพเจ้าแห่งท้องทะเล"
+
+[node name="Label3" parent="CanvasLayer/PanelContainer/MarginContainer/VBoxContainer" index="2"]
+text = "Here your last reward:"
+
+[node name="MarginContainer" parent="CanvasLayer/PanelContainer2" index="0"]
+margin_bottom = 338.0
+
+[node name="VBoxContainer" parent="CanvasLayer/PanelContainer2/MarginContainer" index="0"]
+margin_bottom = 338.0
+
+[node name="Label" parent="CanvasLayer/PanelContainer2/MarginContainer/VBoxContainer" index="0"]
+text = "เรื่องน่ารู้เกี่ยวกับอวกาศ บทที่ 7 สุดท้าย"
+
+[node name="Label2" parent="CanvasLayer/PanelContainer2/MarginContainer/VBoxContainer" index="1"]
+text = "  เรื่องน่ารู้เกี่ยวกับดาวเนปจูน หรือเจ้าของฉายาเทพเจ้าแห่งท้องทะเล"
+
+[node name="Label3" parent="CanvasLayer/PanelContainer2/MarginContainer/VBoxContainer" index="2"]
+margin_bottom = 211.0
+text = "  ดาวดวงนี้เป็นดาวเคราะห์ดวงแรกที่พบจากการคำนวณของนักดาราศาสตร์ ก่อนที่จะตรวจพบบนท้องฟ้าด้วยกล้องโทรทรรศน์
+  เป็นดาวที่มีความหนาแน่นน้อยกว่าน้ำ
+  ขนาด: มีขนาดเส้นผ่าสุนย์กลางเป็น 3 เท่าของโลก
+  หมุนรอบตัวเอง: รอบละประมาณ 16 ชั่วโมง
+  โคจรรอบดวงอาทิตย์: 164 ปี
+  ดวงจันทร์บริวาร: ไม่น้อยกว่า 8 ดวง"
+
+[node name="Label4" parent="CanvasLayer/PanelContainer2/MarginContainer/VBoxContainer" index="3"]
+margin_top = 215.0
+margin_bottom = 237.0
+text = "  เรื่องน่ารู้เพิ่มเติม"
+
+[node name="Label5" parent="CanvasLayer/PanelContainer2/MarginContainer/VBoxContainer" index="4"]
+margin_top = 241.0
+margin_bottom = 338.0
+text = "  ดาวเคราะห์แคระ:
+  เป็นดาวที่มีลักษณะคล้ายกับดาวเคราะห์เป็นวัตถุท้องฟ้าที่โคจรรอบดาวฤกษ์มีมวลมากพอที่จะมีแรงโน้มถ่วงดึงดูดตัวเองมีรูปร่าง
+  ใกล้เคียงกับทรงกลมมีวงโคจรที่ไม่เป็นอิสระหรือซ้อนทับกับดาวอื่นๆและไม่ใช่บริวารของดาวเคราะห์ดวงใด
+  ปัจจุบันมีวัตถุท้องฟ้าที่จัดเป็นดาวเคราะห์แคระเช่น พลูโตซีรีส อีริส เฮาเมอา มาคีมาคี"
+
+[node name="Level_buttom" parent="CanvasLayer" index="3"]
+margin_left = 716.0
+margin_right = 933.0
+text = "ออกเกม"

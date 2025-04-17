@@ -1,0 +1,23 @@
+{
+	"events": [
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1667221159.cfg"
+		},
+		{
+			"character": "character-1667221475.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "สำรวจทุกอย่างครบหมดแล้วสินะ พร้อมเริ่มปฎิบัติการหรือยังคะ? \nถ้าพร้อมแล้วเชิญกด  L หรือ ส เพื่อไปต่อ"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 0.2
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.2 - Dev",
+		"file": "timeline-1667717507.json",
+		"name": "comfirmbut"
+	}
+}

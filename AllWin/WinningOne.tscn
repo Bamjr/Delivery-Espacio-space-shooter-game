@@ -1,0 +1,43 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://AllWin/WinningTut.tscn" type="PackedScene" id=1]
+[ext_resource path="res://AllWin/WinningOne.gd" type="Script" id=2]
+
+[node name="WinningOne" instance=ExtResource( 1 )]
+script = ExtResource( 2 )
+
+[node name="Label2" parent="CanvasLayer/PanelContainer/MarginContainer/VBoxContainer" index="1"]
+text = "Mercury: เตาไฟแช่แข็ง"
+
+[node name="MarginContainer" parent="CanvasLayer/PanelContainer2" index="0"]
+margin_bottom = 301.0
+
+[node name="VBoxContainer" parent="CanvasLayer/PanelContainer2/MarginContainer" index="0"]
+margin_bottom = 301.0
+
+[node name="Label" parent="CanvasLayer/PanelContainer2/MarginContainer/VBoxContainer" index="0"]
+text = "เรื่องน่ารู้เกี่ยวกับอวกาศ บทที่ 1"
+
+[node name="Label2" parent="CanvasLayer/PanelContainer2/MarginContainer/VBoxContainer" index="1"]
+margin_bottom = 60.0
+text = "  เรื่องน่ารู้เกี่ยวกับดาวพุธ หรือเจ้าของฉายาเตาไฟแช่แข็ง"
+
+[node name="Label3" parent="CanvasLayer/PanelContainer2/MarginContainer/VBoxContainer" index="2"]
+margin_top = 64.0
+margin_bottom = 186.0
+text = "  ในตอนกลางวัน: ร้อนจัด 
+  ในตอนกลางคืน: หนาวจัด
+  หมุนรอบตัวเอง: รอบละ 59 วัน
+  โคจรรอบดวงอาทิตย์: รอบละ 88 วัน
+ ไม่มีดวงจันทร์เป็นดาวบริวาร เส้นผ่าศูนย์กลางน้อยกว่าโลก 3 เท่า  เป็นดาวเคราะห์ที่มองเห็นได้ด้วยตาเปล่า"
+
+[node name="Label4" parent="CanvasLayer/PanelContainer2/MarginContainer/VBoxContainer" index="3"]
+margin_top = 190.0
+margin_bottom = 212.0
+text = " เรื่องน่ารู้เพิ่มเติม"
+
+[node name="Label5" parent="CanvasLayer/PanelContainer2/MarginContainer/VBoxContainer" index="4"]
+margin_top = 216.0
+margin_bottom = 263.0
+text = "  ดวงจันทร์:
+  ดวงจันทร์ไม่มีบรรยากาศห่อหุ้ม ไม่มีแสงสว่างในตัวเอง"

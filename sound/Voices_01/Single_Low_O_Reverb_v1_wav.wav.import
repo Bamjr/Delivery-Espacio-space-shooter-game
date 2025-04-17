@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Single_Low_O_Reverb_v1_wav.wav-a704af96ee5281ad540e5211daa42af3.sample"
+
+[deps]
+
+source_file="res://sound/Voices_01/Single_Low_O_Reverb_v1_wav.wav"
+dest_files=[ "res://.import/Single_Low_O_Reverb_v1_wav.wav-a704af96ee5281ad540e5211daa42af3.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Voice_Single_v3_wav.wav-72b349f86b7b4ea1860f2d0a1cc4f5ab.sample"
+
+[deps]
+
+source_file="res://sound/Voices_02/Voice_Single_v3_wav.wav"
+dest_files=[ "res://.import/Voice_Single_v3_wav.wav-72b349f86b7b4ea1860f2d0a1cc4f5ab.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

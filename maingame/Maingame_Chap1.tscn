@@ -1,0 +1,120 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://maingame/Player/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://maingame/Player/Line2D.tscn" type="PackedScene" id=2]
+[ext_resource path="res://maingame/BackgroundStar.tscn" type="PackedScene" id=3]
+[ext_resource path="res://maingame/Maingame_Chap1.gd" type="Script" id=4]
+[ext_resource path="res://maingame/titleAnimation.gd" type="Script" id=5]
+[ext_resource path="res://maingame/title.tscn" type="PackedScene" id=6]
+[ext_resource path="res://maingame/UIMissionHome.tscn" type="PackedScene" id=7]
+[ext_resource path="res://maingame/meteorite.tscn" type="PackedScene" id=8]
+[ext_resource path="res://maingame/EnemyFix.tscn" type="PackedScene" id=9]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 725.75, 46.2188 )
+
+[sub_resource type="Gradient" id=1]
+offsets = PoolRealArray( 0, 0.58011, 1 )
+colors = PoolColorArray( 0.0313726, 0.172549, 0.701961, 1, 0.258824, 0.501961, 1, 1, 0.780392, 0.854902, 1, 1 )
+
+[node name="Maingame_Chap1" type="Node2D"]
+script = ExtResource( 4 )
+
+[node name="UI" parent="." instance=ExtResource( 7 )]
+
+[node name="Limit" type="Node2D" parent="."]
+
+[node name="Camera2D2" type="Camera2D" parent="Limit"]
+current = true
+limit_left = -700
+limit_top = -600
+limit_right = 700
+limit_bottom = 600
+smoothing_enabled = true
+smoothing_speed = 2.0
+editor_draw_limits = true
+
+[node name="invisble_Wall" type="StaticBody2D" parent="Limit"]
+
+[node name="Wall" type="CollisionShape2D" parent="Limit/invisble_Wall"]
+position = Vector2( -6.5, -614.5 )
+shape = SubResource( 2 )
+
+[node name="Wall4" type="CollisionShape2D" parent="Limit/invisble_Wall"]
+position = Vector2( 5, 615 )
+shape = SubResource( 2 )
+
+[node name="Wall2" type="CollisionShape2D" parent="Limit/invisble_Wall"]
+position = Vector2( -713, 101 )
+rotation = 1.5708
+shape = SubResource( 2 )
+
+[node name="Wall3" type="CollisionShape2D" parent="Limit/invisble_Wall"]
+position = Vector2( 721, 75 )
+rotation = 1.5708
+shape = SubResource( 2 )
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+
+[node name="Line2D2" parent="Player" instance=ExtResource( 2 )]
+show_behind_parent = true
+points = PoolVector2Array( 102, 43 )
+default_color = Color( 0.4, 0.501961, 1, 0.737255 )
+gradient = SubResource( 1 )
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Player"]
+remote_path = NodePath("../../Limit/Camera2D2")
+
+[node name="BackgroundStar" parent="." instance=ExtResource( 3 )]
+
+[node name="title" parent="." instance=ExtResource( 6 )]
+script = ExtResource( 5 )
+
+[node name="Asteroid" type="Node2D" parent="."]
+
+[node name="meteorite" parent="Asteroid" instance=ExtResource( 8 )]
+position = Vector2( -328, -147 )
+
+[node name="meteorite6" parent="Asteroid" instance=ExtResource( 8 )]
+position = Vector2( 483, -397 )
+
+[node name="meteorite5" parent="Asteroid" instance=ExtResource( 8 )]
+position = Vector2( 332, -147 )
+
+[node name="meteorite2" parent="Asteroid" instance=ExtResource( 8 )]
+position = Vector2( -549, -393 )
+
+[node name="meteorite3" parent="Asteroid" instance=ExtResource( 8 )]
+position = Vector2( -156, -412 )
+
+[node name="meteorite4" parent="Asteroid" instance=ExtResource( 8 )]
+position = Vector2( 171, -402 )
+
+[node name="meteorite7" parent="Asteroid" instance=ExtResource( 8 )]
+position = Vector2( -335, 468 )
+
+[node name="meteorite8" parent="Asteroid" instance=ExtResource( 8 )]
+position = Vector2( 476, 218 )
+
+[node name="meteorite9" parent="Asteroid" instance=ExtResource( 8 )]
+position = Vector2( 325, 468 )
+
+[node name="meteorite10" parent="Asteroid" instance=ExtResource( 8 )]
+position = Vector2( -556, 222 )
+
+[node name="meteorite11" parent="Asteroid" instance=ExtResource( 8 )]
+position = Vector2( -163, 203 )
+
+[node name="meteorite12" parent="Asteroid" instance=ExtResource( 8 )]
+position = Vector2( 164, 213 )
+
+[node name="EnemyFix" parent="." instance=ExtResource( 9 )]
+position = Vector2( 16, 285 )
+
+[node name="EnemyFix2" parent="." instance=ExtResource( 9 )]
+position = Vector2( 433, 22 )
+
+[node name="EnemyFix3" parent="." instance=ExtResource( 9 )]
+position = Vector2( -473, 136 )
+
+[connection signal="body_entered" from="Asteroid/meteorite" to="." method="_on_meteorite_body_entered"]

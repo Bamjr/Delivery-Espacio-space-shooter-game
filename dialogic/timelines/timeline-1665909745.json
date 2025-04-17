@@ -1,0 +1,326 @@
+{
+	"events": [
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1665047251.cfg"
+		},
+		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": true,
+			"wait_seconds": 0.5
+		},
+		{
+			"audio_bus": "Master",
+			"background-music": "play",
+			"event_id": "dialogic_031",
+			"event_name": "BackgroundMusic",
+			"fade_length": 1,
+			"file": "res://sound/mixkit-radio-waves-glitch-white-noise-1041.wav",
+			"volume": 0
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1665908246.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1665908246.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "t....h.....7R.e.....w18..0"
+		},
+		{
+			"character": "character-1665908246.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "...................."
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://sound/phone-pick-up-46796.wav",
+			"volume": 0
+		},
+		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": false,
+			"wait_seconds": 1,
+			"waiting_skippable": false
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "",
+			"volume": 0
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_position": false,
+			"change_z_index": false,
+			"character": "character-1665910294.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "(Don't change)",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 2,
+			"z_index": 0
+		},
+		{
+			"character": "character-1665910294.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "เอเจนท์นักบิน กรุณารายงานรหัสประจำตัว..."
+		},
+		{
+			"character": "character-1665911980.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "(เราเป็นแค่เด็กฝึกงานจะไปมีรหัสประจำตัวอย่างเป้นทางการได้อย่างไรเล่า!?)"
+		},
+		{
+			"choice": "รายงานสถานการณ์ปัจจุบันก่อน",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1665911980.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "คือ...เราคือนักบินฝึกงานที่พึ่งจะมาฝึกวันนี้น่ะ! ขอรายงานสถานการณ์ตอนนี้ก่อนได้ไหม!"
+		},
+		{
+			"character": "character-1665910294.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "ไม่ใช่ตัวจริงหรอกเหรอคะ มาฝึกงานวันแรกคุณก็สร้างเรื่องเลยหรือไง คุณรู้หรือเปล่าว่าสถานะของคุณยังไม่ได้รับอนุญาตให้แตะต้องแผงควบคุมด้วยซ้ำ"
+		},
+		{
+			"character": "character-1665910294.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "ไปเรียกตัวจริงมาเดี๋ยวนี้ค่ะ"
+		},
+		{
+			"character": "character-1665911980.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "ฟังก่อนสิ! คือว่าเอเจนท์ตัวจริงหายไปจากยานแล้ว ไฟฟ้าทั้งหมดก็ถูกตัดด้วย!"
+		},
+		{
+			"choice": "โกหกเลขรหัสประจำตัว",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1665911980.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "เอ่อ....รหัส 253334 ?"
+		},
+		{
+			"character": "character-1665910294.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "....."
+		},
+		{
+			"character": "character-1665910294.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "คุณคงจะเป็นโจรสลัดอวกาศสินะ...."
+		},
+		{
+			"character": "character-1665910294.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[color=#ff0000]ดำเนินการระเบิดตัวรับสัญญาณภายใน 3[/color]"
+		},
+		{
+			"character": "character-1665911980.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "เดี๋ยวก่อนนนนนนนนนน!!! เราเป็นแค่เด็กฝึกงานเลยยังไม่ได้รหัสน่ะ!"
+		},
+		{
+			"character": "character-1665911980.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "ที่สำคัญกว่านั้น คือว่าเอเจนท์ตัวจริงหายไปจากยานแล้ว ไฟฟ้าทั้งหมดก็ถูกตัดด้วย!"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1665911980.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "เพราะฉะนั้นช่วยส่งยานมาช่วยเราหน่อยได้ไหม!"
+		},
+		{
+			"character": "character-1665910294.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "...ฉันพอจะเข้าใจสถานการณ์แล้ว กรุณาแจ้งชื่อยานและหมายเลขกำกับค่ะ"
+		},
+		{
+			"choice": "X-2",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1665910294.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "ขอเวลาสักครู่..."
+		},
+		{
+			"choice": "Y-2",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1665910294.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "ขอเวลาสักครู่"
+		},
+		{
+			"character": "character-1665910294.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "ดูเหมือนทางองค์กรจะไม่มียานรุ่นนี้นะคะ \nอยากให้ฉันระเบิดคุณทิ้งเลยตอนนี้หรือเปล่า?"
+		},
+		{
+			"character": "character-1665911980.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "เดี๋ยว! ถ้างั้นมันน่าจะเป็น X-2"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1665910294.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "ดูเหมือนว่าคุณจะมาไกลเกินเรดาห์ที่เราจะหาคุณเจอแล้วล่ะ\nแถวนั้นดูเหมือนไม่มีจานดาวเทียมเลย"
+		},
+		{
+			"character": "character-1665910294.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "เราส่งยานออกไปช่วยกู้คุณไม่ได้ ดูเหมือนว่าคุณต้องบังคับยานกลับด้วยตัวเอง"
+		},
+		{
+			"character": "character-1665910294.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "ไหน ๆ ก็แล้วคุณก็ส่งของแทนตัวจริงไปเลยล่ะกัน"
+		},
+		{
+			"character": "character-1665911980.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "เดี๋ยว ๆ แล้วคุณจะไม่ห่วงความปลอดภัยของเอเจนท์ตัวจริงหน่อยเหรอ!?"
+		},
+		{
+			"character": "character-1665910294.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "ทางเรากำลังส่งยานตามหาอยู่ โปรดกังวลเรื่องของตัวเองเถอะ"
+		},
+		{
+			"character": "character-1665910294.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "เพราะคุณต้องนำยานลำนี้กลับมาให้ได้ วันนี้ฉันจะรับหน้าที่ฝึกสอนคุณเอง"
+		},
+		{
+			"character": "character-1665911980.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "แต่เราจะขับยานยังไง ของพวกนี้มันต้องมีใบอนุญาตไม่ใช่เหรอ!?"
+		},
+		{
+			"character": "character-1665910294.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "คุณกำลังกังวลเรื่องเล็กน้อยอยู่นะ ตอนนี้ฉันได้ลงทะเบียนชั่วคราวให้คุณไปแล้วค่ะ"
+		},
+		{
+			"character": "character-1665910294.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "ยศของคุณคือ \"จูเนียร์\" โปรดสลักจำไว้ในหัวด้วย"
+		},
+		{
+			"character": "character-1665910294.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "และจงเรียกฉันด้วยยศว่าเอเจนท์ทุกครั้งเพื่อเป็นการให้เกียรติ์"
+		},
+		{
+			"character": "character-1665911980.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "เอ่อ..."
+		},
+		{
+			"character": "character-1665910294.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "ฉันจะไม่พูดเยอะ ขอเข้าบทเรียนแรกเลยแล้วกัน"
+		},
+		{
+			"change_timeline": "timeline-1667032716.json",
+			"event_id": "dialogic_020"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.2 - Dev",
+		"file": "timeline-1665909745.json",
+		"name": "firstcut"
+	}
+}

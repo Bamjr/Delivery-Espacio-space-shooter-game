@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Hydrographic_Pen_v1_wav.wav-c0411dfbb114416f7b351d8ebd8db639.sample"
+
+[deps]
+
+source_file="res://sound/Hydrographic_Pen_01/Hydrographic_Pen_v1_wav.wav"
+dest_files=[ "res://.import/Hydrographic_Pen_v1_wav.wav-c0411dfbb114416f7b351d8ebd8db639.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

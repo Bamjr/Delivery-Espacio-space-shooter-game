@@ -1,0 +1,58 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://AllLevel/title_ChapTwo.tscn" type="PackedScene" id=1]
+[ext_resource path="res://maingame/Maingame_Chap1.tscn" type="PackedScene" id=2]
+[ext_resource path="res://AllLevel/Maingame_ChapTwo.gd" type="Script" id=3]
+[ext_resource path="res://maingame/titleAnimation.gd" type="Script" id=4]
+
+[node name="Maingame_Chap1" instance=ExtResource( 2 )]
+script = ExtResource( 3 )
+
+[node name="title" parent="." index="4"]
+visible = false
+script = null
+
+[node name="meteorite" parent="Asteroid" index="0"]
+position = Vector2( -6, -223 )
+
+[node name="meteorite6" parent="Asteroid" index="1"]
+position = Vector2( 545, -442 )
+
+[node name="meteorite5" parent="Asteroid" index="2"]
+position = Vector2( 260, -223 )
+
+[node name="meteorite2" parent="Asteroid" index="3"]
+position = Vector2( -273, 232 )
+
+[node name="meteorite3" parent="Asteroid" index="4"]
+position = Vector2( -274, -220 )
+
+[node name="meteorite4" parent="Asteroid" index="5"]
+position = Vector2( -577, -461 )
+
+[node name="meteorite7" parent="Asteroid" index="6"]
+position = Vector2( 1, 245 )
+
+[node name="meteorite8" parent="Asteroid" index="7"]
+position = Vector2( 232, 243 )
+
+[node name="meteorite9" parent="Asteroid" index="8"]
+position = Vector2( 552, 489 )
+
+[node name="meteorite10" parent="Asteroid" index="9"]
+position = Vector2( -588, 478 )
+
+[node name="meteorite11" parent="Asteroid" index="10"]
+position = Vector2( -452, 4 )
+
+[node name="meteorite12" parent="Asteroid" index="11"]
+position = Vector2( 424, 9 )
+
+[node name="EnemyFix" parent="." index="6"]
+position = Vector2( -479, -145 )
+
+[node name="EnemyFix2" parent="." index="7"]
+position = Vector2( 449, 178 )
+
+[node name="title3" parent="." index="9" instance=ExtResource( 1 )]
+script = ExtResource( 4 )

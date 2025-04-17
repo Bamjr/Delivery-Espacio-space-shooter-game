@@ -1,0 +1,203 @@
+[gd_scene load_steps=18 format=2]
+
+[ext_resource path="res://font/lessona.tres" type="DynamicFontData" id=1]
+[ext_resource path="res://AllWin/styleboxflat.tres" type="StyleBox" id=2]
+[ext_resource path="res://font/buttonWinn.tres" type="DynamicFont" id=3]
+[ext_resource path="res://AllWin/WinningTut.gd" type="Script" id=4]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.364706, 0.321569, 0.521569, 1 )
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color( 1, 1, 1, 1 )
+shadow_color = Color( 0.901961, 0.843137, 0.843137, 0.6 )
+shadow_size = 20
+
+[sub_resource type="DynamicFontData" id=2]
+font_path = "res://font/Superspace Bold ver 1.00.ttf"
+
+[sub_resource type="DynamicFont" id=3]
+size = 90
+font_data = SubResource( 2 )
+
+[sub_resource type="DynamicFontData" id=4]
+font_path = "res://font/Superspace Bold Slant ver 1.00.ttf"
+
+[sub_resource type="DynamicFont" id=5]
+size = 30
+font_data = SubResource( 4 )
+
+[sub_resource type="DynamicFontData" id=6]
+font_path = "res://font/Superspace Bold Italic ver 1.00.otf"
+
+[sub_resource type="DynamicFont" id=7]
+size = 40
+font_data = SubResource( 6 )
+
+[sub_resource type="StyleBoxFlat" id=8]
+bg_color = Color( 0.866667, 0.733333, 1, 1 )
+shadow_color = Color( 0.133333, 0.0117647, 0.25098, 0.6 )
+shadow_size = 9
+
+[sub_resource type="DynamicFontData" id=9]
+font_path = "res://font/Superspace Bold ver 1.00.otf"
+
+[sub_resource type="DynamicFont" id=10]
+size = 30
+font_data = SubResource( 9 )
+
+[sub_resource type="DynamicFontData" id=11]
+font_path = "res://font/Superspace Bold ver 1.00.otf"
+
+[sub_resource type="DynamicFont" id=12]
+size = 19
+font_data = SubResource( 11 )
+
+[sub_resource type="DynamicFont" id=13]
+size = 19
+outline_color = Color( 0.0823529, 0.0313726, 0.0313726, 1 )
+font_data = ExtResource( 1 )
+
+[node name="WinningTut" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 4 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="PanelContainer" type="PanelContainer" parent="CanvasLayer"]
+self_modulate = Color( 0.623529, 0.517647, 1, 1 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 24.0
+margin_top = 20.0
+margin_right = -16.0
+margin_bottom = -16.0
+rect_scale = Vector2( 0.99, 0.99 )
+custom_styles/panel = SubResource( 1 )
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/PanelContainer"]
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 974.0
+margin_bottom = 554.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/PanelContainer/MarginContainer"]
+margin_right = 964.0
+margin_bottom = 544.0
+
+[node name="Label" type="Label" parent="CanvasLayer/PanelContainer/MarginContainer/VBoxContainer"]
+margin_right = 964.0
+margin_bottom = 101.0
+custom_fonts/font = SubResource( 3 )
+text = "Mission Complete!"
+align = 1
+
+[node name="Label2" type="Label" parent="CanvasLayer/PanelContainer/MarginContainer/VBoxContainer"]
+margin_top = 105.0
+margin_right = 964.0
+margin_bottom = 139.0
+custom_fonts/font = SubResource( 5 )
+text = "Code: Home misson"
+align = 1
+
+[node name="Label3" type="Label" parent="CanvasLayer/PanelContainer/MarginContainer/VBoxContainer"]
+margin_top = 143.0
+margin_right = 964.0
+margin_bottom = 188.0
+custom_fonts/font = SubResource( 7 )
+text = "Here your reward:"
+align = 1
+
+[node name="PanelContainer2" type="PanelContainer" parent="CanvasLayer"]
+margin_left = 82.0
+margin_top = 226.0
+margin_right = 938.0
+margin_bottom = 527.0
+custom_styles/panel = SubResource( 8 )
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/PanelContainer2"]
+margin_right = 856.0
+margin_bottom = 313.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/PanelContainer2/MarginContainer"]
+margin_right = 856.0
+margin_bottom = 313.0
+
+[node name="Label" type="Label" parent="CanvasLayer/PanelContainer2/MarginContainer/VBoxContainer"]
+margin_right = 856.0
+margin_bottom = 34.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 10 )
+text = "เรื่องน่ารู้เกี่ยวกับอวกาศ บทที่ 0"
+align = 1
+
+[node name="Label2" type="Label" parent="CanvasLayer/PanelContainer2/MarginContainer/VBoxContainer"]
+margin_top = 38.0
+margin_right = 856.0
+margin_bottom = 85.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 12 )
+text = "  หากเรียงลำดับดาวเคราะห์ที่ไกลจากดวงอาทิตย์ออกไป จะได้ดังนี้: 
+  ดาวพุธ ดาวศุกร์ โลก ดาวอังคาร ดาวพฤหัส ดาวเสาร์ ดาวยูเรนัส ดาวเนปจูน"
+
+[node name="Label3" type="Label" parent="CanvasLayer/PanelContainer2/MarginContainer/VBoxContainer"]
+margin_top = 89.0
+margin_right = 856.0
+margin_bottom = 136.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 13 )
+text = "  หลุมดำ ( Black Hole ) มี 4 ประเภท แต่ละประเภทคือ:
+  หลุมดำจิ๋ว , หลุมดำมวลยิ่งยวด , หลุมดำจากดาวฤกษ์ , หลุมดำมวลปานกลาง"
+
+[node name="Label4" type="Label" parent="CanvasLayer/PanelContainer2/MarginContainer/VBoxContainer"]
+margin_top = 140.0
+margin_right = 856.0
+margin_bottom = 237.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 13 )
+text = "  คำทำนายดวงอาทิตย์:
+  ในอีก 5,000 ล้านปีข้างหน้า ดวงอาทิตย์จะถึงจุดจบเมื่อเผาผลาญเชื้อเพลิงหมดสิ้นไป 
+  ล่าสุดผลการศึกษาของทีมนักดาราศาสตร์จากโปแลนด์ อาร์เจนตินา และสหราชอาณาจักร 
+  ได้ทำนายไว้ว่า ดวงอาทิตย์จะกลายเป็น “เนบิวลาดาวเคราะห์” เมื่อสิ้นอายุขัย"
+
+[node name="Label5" type="Label" parent="CanvasLayer/PanelContainer2/MarginContainer/VBoxContainer"]
+margin_top = 241.0
+margin_right = 856.0
+margin_bottom = 313.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 13 )
+text = "  กาแล้กซี่ทางช้างเผือกมีรูปร่างคล้าย: ก้นหอย
+ ดาวเคราพห์ที่สามารถมองเห็นได้ด้วยตาเปล่าทั้งหมด:
+ ดาวศุกร์ ดาวพฤหัสบดี ดาวเสาร์ ดาวอังคาร และดาวพุธ"
+
+[node name="Main_button" type="Button" parent="CanvasLayer"]
+margin_left = 100.0
+margin_top = 137.0
+margin_right = 310.0
+margin_bottom = 210.0
+custom_fonts/font = ExtResource( 3 )
+custom_styles/hover = ExtResource( 2 )
+custom_styles/pressed = ExtResource( 2 )
+custom_styles/focus = ExtResource( 2 )
+custom_styles/disabled = ExtResource( 2 )
+custom_styles/normal = ExtResource( 2 )
+text = "ไปที่หน้า Main_Menu"
+
+[node name="Level_buttom" type="Button" parent="CanvasLayer"]
+margin_left = 696.0
+margin_top = 139.0
+margin_right = 908.0
+margin_bottom = 212.0
+custom_fonts/font = ExtResource( 3 )
+custom_styles/hover = ExtResource( 2 )
+custom_styles/pressed = ExtResource( 2 )
+custom_styles/focus = ExtResource( 2 )
+custom_styles/disabled = ExtResource( 2 )
+custom_styles/normal = ExtResource( 2 )
+text = "ไปสู่ด่านถัดไป"
+
+[connection signal="pressed" from="CanvasLayer/Main_button" to="." method="_on_Main_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/Level_buttom" to="." method="_on_Level_buttom_pressed"]

@@ -1,0 +1,36 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://AllWin/WinningOne.tscn" type="PackedScene" id=1]
+[ext_resource path="res://AllWin/WinningFour.gd" type="Script" id=2]
+
+[node name="WinningFour" instance=ExtResource( 1 )]
+script = ExtResource( 2 )
+
+[node name="Label2" parent="CanvasLayer/PanelContainer/MarginContainer/VBoxContainer" index="1"]
+text = "Jupiter: ดาวยักษ์"
+
+[node name="MarginContainer" parent="CanvasLayer/PanelContainer2" index="0"]
+margin_bottom = 313.0
+
+[node name="VBoxContainer" parent="CanvasLayer/PanelContainer2/MarginContainer" index="0"]
+margin_bottom = 313.0
+
+[node name="Label" parent="CanvasLayer/PanelContainer2/MarginContainer/VBoxContainer" index="0"]
+text = "เรื่องน่ารู้เกี่ยวกับอวกาศ บทที่ 4"
+
+[node name="Label2" parent="CanvasLayer/PanelContainer2/MarginContainer/VBoxContainer" index="1"]
+text = "  เรื่องน่ารู้เกี่ยวกับดาวพฤหัส หรือเจ้าของฉายาดาวยักษ์"
+
+[node name="Label3" parent="CanvasLayer/PanelContainer2/MarginContainer/VBoxContainer" index="2"]
+text = "  ขนาด: เป็นดาวเคราะห์ที่ใหญ่ที่สุดในระบบสุริยะ ขนาดเส้นผ่าสูงกลางเป้น 10 เท่าของโลก
+  จุดแดงขนาดใหญ่	: พายุหมุนขนาดยักษ์ที่มีขนาดใหญ่กว่าโลก 10 เท่า
+  หมุนรอบตัวเอง: 10 ชั่วโมง
+  หมุนรอบดวงอาทิตย์: 12 ปี 
+  ดวงจันทร์บริวาร: ไม่น้อยกว่า 63 ดวง"
+
+[node name="Label5" parent="CanvasLayer/PanelContainer2/MarginContainer/VBoxContainer" index="4"]
+margin_bottom = 313.0
+text = "ดาวหาง:
+เป็นก้อนน้ำแข็งสกปรกโคจรรอบดวงอาทิตย์เป็นวงรีมาก เมื่อเข้าใกล้ดวงอาทิตย์ก็จะเกิดการระเหิดเป็นแก๊สและ
+มีฝุ่นปะปน สะท้อนแสงดวงอาทิตย์ทำให้มองเห็นเป็นหัวและหาง ยิ่งเข้าใกล้ดวงอาทิตย์
+ส่วนหัวจะใหญ่ขึ้นส่วนหางก็จะยิ่งยาวมากขึ้นและหางจะชี้ไปทางทิศตรงข้ามกับดวงอาทิตย์เสมอ"

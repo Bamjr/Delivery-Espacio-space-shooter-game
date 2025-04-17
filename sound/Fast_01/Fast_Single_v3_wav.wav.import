@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Fast_Single_v3_wav.wav-bf16f48d4d3a0efd37b7afc20da9dc59.sample"
+
+[deps]
+
+source_file="res://sound/Fast_01/Fast_Single_v3_wav.wav"
+dest_files=[ "res://.import/Fast_Single_v3_wav.wav-bf16f48d4d3a0efd37b7afc20da9dc59.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
