@@ -47,9 +47,9 @@ Click the image above to watch the full gameplay walkthrough on YouTube.
 
 ## 📥 How to Play
 
-Build instructions or playable download will be added soon.  
-Stay tuned for updates or visit the project page!
+Download the [EspacioDelivery2.zip](EspacioDelivery2.zip) file, extract it, and run the Application file inside to start playing.
 
+Enjoy the game and stay tuned for future updates!
 ---
 
 ## 👨‍💻 For Developers
