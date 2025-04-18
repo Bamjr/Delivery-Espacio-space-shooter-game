@@ -101,6 +101,6 @@ This project is open-source and available under the [MIT License](LICENSE).
 
 ## 🙏 Credits
 
-Created with love by a junior high school student using the Godot game engine.  
+Created with love by a group of junior high school students using the Godot game engine.  
 Thanks to teachers, mentors, and friends who supported the journey.
 
