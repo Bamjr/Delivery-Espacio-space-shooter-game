@@ -21,8 +21,6 @@ This project was created while I was in lower secondary school (มัธยม�
 - **Engine**: [Godot Engine](https://godotengine.org/)
 - **Language**: GDScript
 - **Art**: Pixel art and educational overlays
-- **Platform**: Desktop (Windows/Linux) and Web export supported
-
 ---
 
 ## 📥 How to Play
