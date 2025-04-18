@@ -14,6 +14,28 @@ This project was created while I was in lower secondary school (มัธยม�
 - 🪐 Unlock fun facts about Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune, and the Sun!
 - 🎓 Designed to help students learn about astronomy while enjoying a retro-style arcade game
 
+
+## 📸 Screenshots
+
+Here are some screenshots of the game in action:
+
+
+![Screenshot 2025-04-18 150452](https://github.com/user-attachments/assets/a564f42e-19d1-4590-aec7-f9e9def7c372)
+
+![Screenshot 2025-04-18 150520](https://github.com/user-attachments/assets/3d916987-baf8-4c27-889c-22811821f94a)
+
+![Screenshot 2025-04-18 150627](https://github.com/user-attachments/assets/153978d0-f1f1-4dba-a5a7-8222130870d9)
+
+
+---
+
+## 🎥 Gameplay Walkthrough
+
+[![Watch the video](https://img.youtube.com/vi/3T9zfFYfO_A/hqdefault.jpg)](https://youtu.be/3T9zfFYfO_A)  
+
+Click the image above to watch the full gameplay walkthrough on YouTube.
+
+
 ---
 
 ## 🛠 Technology
