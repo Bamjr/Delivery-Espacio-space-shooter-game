@@ -73,6 +73,7 @@ This game is designed to **make learning astronomy fun**. After finishing each l
 
 ## 📄 License
 
+This project is open-source and available under the [MIT License](LICENSE).
 
 ---
 
